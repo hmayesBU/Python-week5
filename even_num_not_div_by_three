@@ -1,0 +1,17 @@
+def even_num_not_div_by_three():
+    """
+    Loop between 1 and 100 (ie: [0, 1, ..., 100}]) and find the sum of all even
+    numbers that are NOT divisible by 3
+    print the sum
+    """
+    sum = 0
+    
+    for num in range(0,100):
+        if num % 2 == 0:
+            if num % 3 != 0:
+                sum += num
+    
+    print (sum)
+
+
+even_num_not_div_by_three()
